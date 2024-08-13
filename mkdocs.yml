@@ -1,0 +1,51 @@
+site_name: Awesome Numerical Weather Prediction
+
+site_url: https://jaeminoh.github.io/awesome-numerical-weather-prediction
+repo_url: https://github.com/jaeminoh/awesome-numerical-weather-prediction
+repo_name: jaeminoh/awesome-nwp
+
+theme:
+  name: material
+  icon:
+    repo: fontawesome/brands/github
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default 
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+
+plugins:
+  - search
+  - bibtex:
+      bib_file: "bibliography/library.bib"
+      csl_file: "bibliography/ima.csl"
+
+markdown_extensions:
+  - def_list
+  - footnotes
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.arithmatex:
+      generic: true
+
+extra:
+  analytics:
+    provider: google
+    property: G-B9XBB4QRXM
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
