@@ -8,6 +8,7 @@ theme:
   name: material
   icon:
     repo: fontawesome/brands/github
+    annotation: material/plus-circle
   palette:
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
@@ -36,6 +37,8 @@ plugins:
 markdown_extensions:
   - def_list
   - footnotes
+  - attr_list
+  - pymdownx.superfences
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.arithmatex:
